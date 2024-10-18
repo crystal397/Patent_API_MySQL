@@ -29,7 +29,14 @@ SERVICE_KEY = os.getenv('SERVICE_KEY')
 1. API_MySQL.py에 정보의 갯수를 30개에서 50개로 늘리되, 1초마다 다음 페이지의 정보까지 모든 정보를 모두 출력합니다.
 
   
-### 1. '사업자등록번호'를 통해 '특허고객번호'를 가져오기
+### 1. '사업자등록번호'를 통해 '특허고객번호' 등 가져오기
 **getApxNum.py**
 
 ### 2. '특허고객번호'로 '등록상태' 등 정보 가져오기
+#### - 특허/실용신안
+**getRegiStat_patent.py**
+#### - 디자인
+**getRegiStat_design.py**
+#### - 상표
+**getRegiStat_trademark.py**
+
