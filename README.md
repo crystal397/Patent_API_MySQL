@@ -30,3 +30,6 @@ SERVICE_KEY = os.getenv('SERVICE_KEY')
 
   
 ### 1. '사업자등록번호'를 통해 '특허고객번호'를 가져오기
+**getApxNum.py**
+
+### 2. '특허고객번호'로 '등록상태' 등 정보 가져오기
