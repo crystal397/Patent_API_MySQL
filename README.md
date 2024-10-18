@@ -1,9 +1,6 @@
 # Patent_API_MySQL
 
-### 활용 사이트, REST API
-https://plus.kipris.or.kr/
-
-### 중요 데이터(Key 값 등) github에 노출하지 않는 방법
+## 중요 데이터(Key 값 등) github에 노출하지 않는 방법
 1. .env 파일 생성 후, Key 값(```SERVICE_KEY = ''```)을 입력합니다.
 2. .gitignore 파일 생성 후, .env를 입력합니다.
 3. 만드는 파이썬 코드에서는 아래와 같이 활용하면 됩니다.
@@ -31,21 +28,14 @@ SERVICE_KEY = os.getenv('SERVICE_KEY')
 ## 산업재산권 데이터의 수집
   
 ### 1. '사업자등록번호'를 통해 '특허고객번호' 등 가져오기
-[API 링크](https://plus.kipris.or.kr/portal/data/service/DBII_000000000000247/view.do?menuNo=210007&kppBCode=&kppMCode=&kppSCode=&subTab=&entYn=N&clasKeyword=#soap_ADI_0000000000010076)
-
-**getApxNum.py**
+**getApxNum.py** [API 링크](https://plus.kipris.or.kr/portal/data/service/DBII_000000000000247/view.do?menuNo=210007&kppBCode=&kppMCode=&kppSCode=&subTab=&entYn=N&clasKeyword=#soap_ADI_0000000000010076)
 
 ### 2. '특허고객번호'로 '등록상태' 등 정보 가져오기
 #### - 특허/실용신안
-[API 링크](https://plus.kipris.or.kr/portal/data/service/DBII_000000000000001/view.do?%20menuNo=200100&kppBCode=&kppMCode=&kppSCode=&subTab=SC001&entYn=N&clasKeyword=#soap_ADI_0000000000002944)
+**getRegiStat_patent.py** [API 링크](https://plus.kipris.or.kr/portal/data/service/DBII_000000000000001/view.do?%20menuNo=200100&kppBCode=&kppMCode=&kppSCode=&subTab=SC001&entYn=N&clasKeyword=#soap_ADI_0000000000002944)
 
-**getRegiStat_patent.py**
 #### - 디자인
-[API 링크](https://plus.kipris.or.kr/portal/data/service/DBII_000000000000008/view.do?%20menuNo=200100&kppBCode=&kppMCode=&kppSCode=&subTab=SC001&entYn=N&clasKeyword=#soap_ADI_0000000000002311)
+**getRegiStat_design.py** [API 링크](https://plus.kipris.or.kr/portal/data/service/DBII_000000000000008/view.do?%20menuNo=200100&kppBCode=&kppMCode=&kppSCode=&subTab=SC001&entYn=N&clasKeyword=#soap_ADI_0000000000002311)
 
-**getRegiStat_design.py**
 #### - 상표
-[API 링크](https://plus.kipris.or.kr/portal/data/service/DBII_000000000000012/view.do?%20menuNo=200100&kppBCode=&kppMCode=&kppSCode=&subTab=SC001&entYn=N&clasKeyword=#soap_ADI_0000000000002321)
-
-**getRegiStat_trademark.py**
-
+**getRegiStat_trademark.py** [API 링크](https://plus.kipris.or.kr/portal/data/service/DBII_000000000000012/view.do?%20menuNo=200100&kppBCode=&kppMCode=&kppSCode=&subTab=SC001&entYn=N&clasKeyword=#soap_ADI_0000000000002321)
