@@ -6,7 +6,7 @@ https://plus.kipris.or.kr/
 ### 중요 데이터(Key 값 등) github에 노출하지 않는 방법
 1. .env 파일 생성 후, Key 값(```SERVICE_KEY = ''```)을 입력합니다.
 2. .gitignore 파일 생성 후, .env를 입력합니다.
-3. 만드는 파이썬 코드에
+3. 만드는 파이썬 코드에서는 아래와 같이 활용하면 됩니다.
 ```
 import os
 from dotenv import load_dotenv
@@ -27,5 +27,6 @@ SERVICE_KEY = os.getenv('SERVICE_KEY')
 
 **API_MySQL_time.py**
 1. API_MySQL.py에 정보의 갯수를 30개에서 50개로 늘리되, 1초마다 다음 페이지의 정보까지 모든 정보를 모두 출력합니다.
+
   
 ### 1. '사업자등록번호'를 통해 '특허고객번호'를 가져오기
