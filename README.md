@@ -43,4 +43,4 @@ SERVICE_KEY = os.getenv('SERVICE_KEY')
 
 #### - 상표 [API Link](https://plus.kipris.or.kr/portal/data/service/DBII_000000000000012/view.do?%20menuNo=200100&kppBCode=&kppMCode=&kppSCode=&subTab=SC001&entYn=N&clasKeyword=#soap_ADI_0000000000002321)
 **getRegiStat_trademark.py** 
-- '특허고객번호' 및 필수값을 API의 입력값으로 넣어 워놔는 정보흘 가져옵니다.
+- '특허고객번호' 및 필수값을 API의 입력값으로 넣어 원하는 정보를 가져옵니다.
