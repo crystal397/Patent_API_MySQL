@@ -19,6 +19,7 @@ SERVICE_KEY = os.getenv('SERVICE_KEY')
 2. XML 데이터 파싱을 하고 필요한 정보 추출 및 출력, 이미지 다운로드를 한 뒤, 총 개수를 출력합니다.
 
 **API_MySQL.py**
+
 0. 미리 MySQL에 데이터베이스, 테이블을 만듭니다.
 1. (이미지 다운로드는 하지 않고) API.py에서 얻은 정보를 MySQL로 전송합니다.
 
