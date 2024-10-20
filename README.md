@@ -30,8 +30,8 @@ SERVICE_KEY = os.getenv('SERVICE_KEY')
 ### 1. '사업자등록번호'를 통해 '특허고객번호' 등 정보 가져오기
 #### [API Link](https://plus.kipris.or.kr/portal/data/service/DBII_000000000000247/view.do?menuNo=210007&kppBCode=&kppMCode=&kppSCode=&subTab=&entYn=N&clasKeyword=#soap_ADI_0000000000010076)
 
-##### Step 1. 정보 출력하기
 **getApxNum.py**
+##### Step 1. 정보 출력하기
 - ```API.py``` 와 동일한 방식입니다.
 - 주어진 정보가 '사업자등록번호'일 때 API를 통해 '특허고객번호' 등 정보를 가져와 다음 단계를 준비합니다.
 
