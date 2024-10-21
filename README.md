@@ -36,6 +36,7 @@ SERVICE_KEY = os.getenv('SERVICE_KEY')
 - ```API.py``` 와 동일한 방식입니다.
 - 주어진 정보가 '사업자등록번호'일 때 API를 통해 '특허고객번호' 등 정보를 가져와 다음 단계를 준비합니다.
 
+**getApxNum_excel.py**
 ##### Step 2. 엑셀 이용하여 정보 가져오고 입력하기
 
 - ```getApxNum.py``` 와 동일한 방식입니다.
