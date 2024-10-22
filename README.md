@@ -36,11 +36,11 @@ SERVICE_KEY = os.getenv('SERVICE_KEY')
 - ```API.py``` 와 동일한 방식입니다.
 - 주어진 정보가 '사업자등록번호'일 때 API를 통해 '특허고객번호' 등 정보를 가져와 다음 단계를 준비합니다.
 
-**getApxNumFromexcel.py**
 ##### Step 2. 엑셀 이용하여 정보 가져오고 입력하기
-
-- ```getApxNum.py``` 와 동일한 방식입니다.
+- ```API.py``` 와 동일한 방식입니다.
 - 주어진 정보가 엑셀이 있어 엑셀에서 데이터를 하나씩 가져와 입력값으로 넣고 출력값을 엑셀 새로운 열에 추가하여 기록합니다.
+- **getApxNumFromexcel.py** 주어진 정보가 '법인번호'일 때 API를 통해 '특허고객번호' 등 정보를 가져와 다음 단계를 준비합니다.
+- **getApxNumFromexcel_br.py** 주어진 정보가 '사업자등록번호'일 때 API를 통해 '특허고객번호' 등 정보를 가져와 다음 단계를 준비합니다.
 
 ### 2. '특허고객번호'로 '등록상태' 등 정보 가져오기
 #### - 특허/실용신안 [API Link](https://plus.kipris.or.kr/portal/data/service/DBII_000000000000001/view.do?%20menuNo=200100&kppBCode=&kppMCode=&kppSCode=&subTab=SC001&entYn=N&clasKeyword=#soap_ADI_0000000000002944)
