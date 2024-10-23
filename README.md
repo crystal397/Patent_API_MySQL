@@ -13,6 +13,16 @@ load_dotenv()
 SERVICE_KEY = os.getenv('SERVICE_KEY')
 ```
 
+## vscode에서 git 연동
+```git fetch```
+> ```git clone```으로 가져왔던 레포지토리의 모든 branch를 다 가져옵니다.
+
+```git checkout origin/[원하는 branch명]``` 
+> 원하는 branch로 이동합니다.
+
+```git checkout -b test```
+> git과 연동되어 있기 때문에 test용으로 새로 만들어 사용합니다.
+
 ### 0. TEST
 **API.py**
 1. API 엔드포인트 URL에 요청 파라미터를 설정하여 GET 요청을 보냅니다.
