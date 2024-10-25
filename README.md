@@ -1,6 +1,4 @@
-# Patent_API_MySQL
-
-## 중요 데이터(Key 값 등) github에 노출하지 않는 방법
+# 중요 데이터(Key 값 등) github에 노출하지 않는 방법
 1. .env 파일 생성 후, Key 값(```SERVICE_KEY = ''```)을 입력합니다.
 2. .gitignore 파일 생성 후, .env를 입력합니다.
 3. 만드는 파이썬 코드에서는 아래와 같이 활용하면 됩니다.
@@ -13,7 +11,7 @@ load_dotenv()
 SERVICE_KEY = os.getenv('SERVICE_KEY')
 ```
 
-## vscode에서 git 연동
+# vscode에서 git 연동
 ```git fetch```
 > ```git clone```으로 가져왔던 레포지토리의 모든 branch를 다 가져옵니다.
 
@@ -22,6 +20,8 @@ SERVICE_KEY = os.getenv('SERVICE_KEY')
 
 ```git checkout -b test```
 > git과 연동되어 있기 때문에 test용으로 새로 만들어 사용합니다.
+
+# Patent_API
 
 ### 0. TEST
 **API.py**
