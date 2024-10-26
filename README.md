@@ -54,6 +54,7 @@ SERVICE_KEY = os.getenv('SERVICE_KEY')
 
 ##### Step 3. 코드 리팩토링하기
 - 코드의 중복성을 줄이고, 특징끼리 나누어 main.py를 경량화하였습니다.
+- 비동기 처리 사용 및 xml 파싱 방법을 변경하여 처리속도를 향상시켰습니다.
 
 ### 2. '특허고객번호'로 '등록상태' 등 정보 가져오기
 #### - 특허/실용신안 [API Link](https://plus.kipris.or.kr/portal/data/service/DBII_000000000000001/view.do?%20menuNo=200100&kppBCode=&kppMCode=&kppSCode=&subTab=SC001&entYn=N&clasKeyword=#soap_ADI_0000000000002944)
